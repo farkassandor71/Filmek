@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Film Adatbázis</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://img.icons8.com/fluent/180/000000/movie-projector.png">
+    
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #00adb5;
+            --secondary-text: #888;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            padding-top: env(safe-area-inset-top, 20px);
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            outline: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input[type="text"]:focus {
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+        .status {
+            text-align: center;
+            color: var(--secondary-text);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .movie-card {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .magyar-cim {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+        .eredeti-cim {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--secondary-text);
+            margin-bottom: 12px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 14px;
+            border-top: 1px solid #2d2d2d;
+            padding-top: 10px;
+        }
+        .info-item span {
+            display: block;
+            color: var(--secondary-text);
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .info-item strong {
+            color: #fff;
+        }
+        .no-result {
+            text-align: center;
+            color: var(--secondary-text);
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Film Forgalmazás Kereső</h1>
+    <input type="text" id="search" placeholder="Film címe vagy részlete..." autocomplete="off">
+    <div id="status" class="status">Adatok betöltése...</div>
+    <div id="results"></div>
+</div>
+
+<script>
+    let movieDatabase = [];
+    const searchInput = document.getElementById('search');
+    const resultsContainer = document.getElementById('results');
+    const statusContainer = document.getElementById('status');
+
+    // Adatok betöltése a legfrissebb adatok.json fájlból
+    fetch('adatok.json')
+        .then(response => response.json())
+        .then(data => {
+            movieDatabase = data;
+            statusContainer.innerText = `${data.length} film betöltve a legfrissebb adatbázisból.`;
+        })
+        .catch(error => {
+            statusContainer.innerText = "Hiba történt az adatok betöltésekor.";
+            console.error(error);
+        });
+
+    // Keresési logika
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        resultsContainer.innerHTML = '';
+
+        if (query.length < 2) {
+            return; // Csak 2 karakternél hosszabb keresésre indul el
+        }
+
+        // Szűrés a magyar vagy az eredeti cím alapján
+        const filtered = movieDatabase.filter(film => 
+            film.magyar_cim.toLowerCase().includes(query) || 
+            film.eredeti_cim.toLowerCase().includes(query)
+        );
+
+        if (filtered.length === 0) {
+            resultsContainer.innerHTML = '<div class="no-result">Nincs találat a keresett filmre.</div>';
+            return;
+        }
+
+        // Max 20 találatot jelenítünk meg egyszerre a gyorsaság érdekében
+        filtered.slice(0, 20).forEach(film => {
+            const card = document.createElement('div');
+            card.className = 'movie-card';
+            
+            // Pénz és nézőszám formázása (pl. 125300 -> 125 300)
+            const nezok = Number(film.nezoszam).toLocaleString('hu-HU');
+            const bevetel = Number(film.bevetel).toLocaleString('hu-HU') + ' Ft';
+            
+            card.innerHTML = `
+                <div class="magyar-cim">${film.magyar_cim}</div>
+                <div class="eredeti-cim">${film.eredeti_cim || '-'}</div>
+                <div class="info-grid">
+                    <div class="info-item"><span>Bemutató</span><strong>${film.bemutato || 'Nincs adat'}</strong></div>
+                    <div class="info-item"><span>Összes néző</span><strong>${nezok} fő</strong></div>
+                    <div class="info-item" style="grid-column: span 2; margin-top: 4px;"><span>Összes bevétel</span><strong style="color: #ecc94b; font-size: 16px;">${bevetel}</strong></div>
+                </div>
+            `;
+            resultsContainer.appendChild(card);
+        });
+    });
+</script>
+
+</body>
+</html>
