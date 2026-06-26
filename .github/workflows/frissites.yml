@@ -1,0 +1,33 @@
+name: Automatikus Adatfrissites
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Minden nap hajnali 2-kor fut le automáticamente
+  workflow_dispatch: # Lehetőséget ad a manuális indításra is
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Forráskód letöltése
+      uses: actions/checkout@v3
+
+    - name: Python beállítása
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Szükséges csomagok telepítése
+      run: |
+        pip install requests beautifulsoup4 pandas xlrd
+
+    - name: Szkript futtatása
+      run: python frissit.py
+
+    - name: Változások mentése a GitHubra
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add adatok.json
+        git commit -m "Automatikus adatfrissítés" || exit 0
+        git push
