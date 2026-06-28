@@ -21,22 +21,13 @@ except Exception as e:
     print(f"Letöltési hiba: {e}")
     exit(1)
 
-# SZUPER számtisztító funkció, ami a tizedesvessző utáni filléreket is levágja
+# Számtisztító funkció
 def tiszta_szam(ertek):
     if pd.isna(ertek): return 0
     szoveg = str(ertek).strip()
-    
-    # Ha van benne tizedesvessző (pl. 1846518282,0), levágjuk a vessző utáni részt
-    if ',' in szoveg:
-        szoveg = szoveg.split(',')[0]
-        
-    # Ha esetleg pont lenne benne tizedesként (pl. 1846518282.0), azt is levágjuk
-    if '.' in szoveg:
-        szoveg = szoveg.split('.')[0]
-        
-    # Kiszedünk minden maradék szóközt, törhetetlen szóközt és Ft jelet
+    if ',' in szoveg: szoveg = szoveg.split(',')[0]
+    if '.' in szoveg: szoveg = szoveg.split('.')[0]
     szoveg = szoveg.replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
-    
     return int(szoveg) if szoveg.isdigit() else 0
 
 # 2. Precíz feldolgozás
@@ -54,6 +45,7 @@ try:
             film = {
                 "magyar_cim": m_cim,
                 "eredeti_cim": str(row.iloc[2]).strip() if pd.notna(row.iloc[2]) else "",
+                "forgalmazo": str(row.iloc[3]).strip() if pd.notna(row.iloc[3]) else "Ismeretlen",
                 "bemutato": str(row.iloc[4]).split()[0] if pd.notna(row.iloc[4]) else "Nincs adat",
                 "bevetel": tiszta_szam(row.iloc[5]),
                 "nezoszam": tiszta_szam(row.iloc[6])
