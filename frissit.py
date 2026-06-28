@@ -7,7 +7,7 @@ import json
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 url = "https://filmforgalmazok.hu/category/filmenkenti-osszesites/"
 
-# 1. Excel fájl megkeresése és letöltése
+# 1. Letöltés
 try:
     res = requests.get(url, headers=headers, timeout=30)
     soup = BeautifulSoup(res.text, "html.parser")
@@ -16,40 +16,47 @@ try:
     xls_data = requests.get(xls_link, headers=headers, timeout=30).content
     with open("adatok.xls", "wb") as f:
         f.write(xls_data)
-    print("Fájl sikeresen letöltve.")
+    print("Fájl letöltve.")
 except Exception as e:
     print(f"Letöltési hiba: {e}")
     exit(1)
 
-# 2. A teljes táblázat feldolgozása soronként
+# Számtisztító funkció
+def tiszta_szam(ertek):
+    if pd.isna(ertek): return 0
+    szoveg = str(ertek).replace('.', '').replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
+    return int(szoveg) if szoveg.isdigit() else 0
+
+# 2. Precíz feldolgozás a megadott oszlopok alapján
 try:
-    df = pd.read_excel("adatok.xls", header=None)
+    # A 2. sor a fejléc, tehát a skiprows=1 beállítással a 2. sor lesz az oszlopnév
+    df = pd.read_excel("adatok.xls", skiprows=1)
     output = []
     
-    for idx, row in df.iterrows():
+    for _, row in df.iterrows():
         try:
-            # Átalakítjuk a sor elemeit szöveggé, kiszűrve az üres cellákat
-            sor_értékek = [str(val).strip() for val in row.values if pd.notna(val)]
+            # Mivel az A oszlop üres, row.iloc[0] az üres stáb. row.iloc[1] a Magyar cím!
+            m_cim = str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else ""
             
-            # Ha a sor üres, vagy túl rövid, vagy a fejléc/összesítő része, kihagyjuk
-            if len(sor_értékek) < 3:
+            # Ha fejléc ismétlődés vagy üres/összesítő sor, kihagyjuk
+            if m_cim == "" or m_cim.lower() in ["cím", "cim", "nan"] or "összesen" in m_cim.lower():
                 continue
-            if "magyar" in sor_értékek[0].lower() or "összesen" in sor_értékek[0].lower() or "forgalmazó" in sor_értékek[0].lower():
-                continue
-                
-            # Ha eljutott idáig, ez egy valódi film sor!
-            output.append({
-                "nyers_adatok": sor_értékek
-            })
+            
+            film = {
+                "magyar_cim": m_cim,
+                "eredeti_cim": str(row.iloc[2]).strip() if pd.notna(row.iloc[2]) else "",
+                "bemutato": str(row.iloc[4]).split()[0] if pd.notna(row.iloc[4]) else "Nincs adat",
+                "bevetel": tiszta_szam(row.iloc[5]),
+                "nezoszam": tiszta_szam(row.iloc[6])
+            }
+            output.append(film)
         except:
-            # HA BÁRMI HIBA VAN EGY SORNÁL, NEM ÁLL LE, CSAK TOVÁBBLÉP A KÖVETKEZŐRE!
             continue
 
-    # Mentés a telefonnak
     with open("adatok.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"Sikeres mentés! Összesen {len(output)} film került beolvasásra a mestertáblázatból.")
+    print(f"Sikeres mentés! {len(output)} film feldolgozva.")
 
 except Exception as e:
-    print(f"Végső hiba: {e}")
+    print(f"Feldolgozási hiba: {e}")
     exit(1)
