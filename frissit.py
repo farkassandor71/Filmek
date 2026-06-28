@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
+from datetime import datetime
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 url = "https://filmforgalmazok.hu/category/filmenkenti-osszesites/"
@@ -30,10 +31,18 @@ def tiszta_szam(ertek):
     szoveg = szoveg.replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
     return int(szoveg) if szoveg.isdigit() else 0
 
+# Hónapok magyarosítása
+honapok = {
+    1: "január", 2: "február", 3: "március", 4: "április", 5: "május", 6: "június",
+    7: "július", 8: "augusztus", 9: "szeptember", 10: "október", 11: "november", 12: "december"
+}
+ma = datetime.now()
+aktualis_datum = f"{ma.year}. {honapok[ma.month]}"
+
 # 2. Precíz feldolgozás
 try:
     df = pd.read_excel("adatok.xls", skiprows=1)
-    output = []
+    filmek_listaja = []
     
     for _, row in df.iterrows():
         try:
@@ -50,13 +59,19 @@ try:
                 "bevetel": tiszta_szam(row.iloc[5]),
                 "nezoszam": tiszta_szam(row.iloc[6])
             }
-            output.append(film)
+            filmek_listaja.append(film)
         except:
             continue
 
+    # Új struktúra: elmentjük a dátumot ÉS a filmeket is egy közös csomagba
+    vegso_adatok = {
+        "frissitve": aktualis_datum,
+        "filmek": filmek_listaja
+    }
+
     with open("adatok.json", "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"Sikeres mentés! {len(output)} film feldolgozva.")
+        json.dump(vegso_adatok, f, ensure_ascii=False, indent=2)
+    print(f"Sikeres mentés! Dátum: {aktualis_datum}, {len(filmek_listaja)} film feldolgozva.")
 
 except Exception as e:
     print(f"Feldolgozási hiba: {e}")
