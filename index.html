@@ -10,11 +10,11 @@
         :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent-color: #00adb5; --secondary-text: #888; }
         body { font-family: -apple-system, sans-serif; background-color: var(--bg-color); color: var(--text-color); padding: 15px; margin: 0; }
         .container { max-width: 600px; margin: 0 auto; padding-bottom: 30px; }
-        h1 { font-size: 22px; text-align: center; color: var(--accent-color); margin-top: 10px; margin-bottom: 15px; }
+        h1 { font-size: 22px; text-align: center; color: var(--accent-color); margin-top: 10px; margin-bottom: 2px; }
+        .db-date { text-align: center; font-size: 13px; color: #ecc94b; margin-bottom: 15px; font-weight: 500; }
         input[type="text"], select { width: 100%; padding: 12px; font-size: 15px; border: none; border-radius: 10px; background-color: var(--card-bg); color: var(--text-color); box-sizing: border-box; margin-bottom: 12px; outline: none; }
         .status { text-align: center; color: var(--secondary-text); font-size: 13px; margin-bottom: 15px; }
         
-        /* Statisztikai szekció */
         .stats-panel { background: #1a1a1a; border: 1px solid #2d2d2d; border-radius: 12px; padding: 12px; margin-bottom: 15px; }
         .panel-title { font-size: 14px; font-weight: bold; color: var(--accent-color); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
         .btn-group { display: flex; gap: 8px; margin-bottom: 12px; }
@@ -23,7 +23,6 @@
         .select-row { display: flex; gap: 8px; margin-bottom: 10px; }
         .select-row select { margin-bottom: 0; }
 
-        /* Film kártyák */
         .movie-card { background-color: var(--card-bg); border-radius: 12px; padding: 14px; margin-bottom: 12px; position: relative; }
         .rank-badge { position: absolute; top: 12px; right: 12px; background: #ecc94b; color: #000; font-size: 11px; font-weight: bold; padding: 2px 6px; border-radius: 4px; }
         .magyar-cim { font-size: 17px; font-weight: bold; color: #fff; padding-right: 40px; }
@@ -37,6 +36,7 @@
 <body>
 <div class="container">
     <h1>Film Adatbázis & Statok</h1>
+    <div id="dbDate" class="db-date">Adatbázis: Frissítés alatt...</div>
     
     <input type="text" id="search" placeholder="Keresés cím alapján..." autocomplete="off">
     <div id="status" class="status">Betöltés...</div>
@@ -81,18 +81,23 @@
     const searchInput = document.getElementById('search');
     const resultsContainer = document.getElementById('results');
     const statusContainer = document.getElementById('status');
+    const dbDateContainer = document.getElementById('dbDate');
     const filterYear = document.getElementById('filterYear');
     const filterForgalmazo = document.getElementById('filterForgalmazo');
 
     fetch('adatok.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
-            movieDatabase = data;
-            statusContainer.innerText = `${data.length} film kész a keresésre.`;
+            // Mivel az új struktúrában az adatok a 'filmek' kulcs alatt vannak:
+            movieDatabase = data.filmek || [];
+            dbDateContainer.innerText = `Adatbázis: ${data.frissitve || 'Ismeretlen dátum'}`;
+            statusContainer.innerText = `${movieDatabase.length} film kész a keresésre.`;
             setupFilters();
-        }).catch(() => { statusContainer.innerText = "Hiba az adatok beolvasásakor."; });
+        }).catch(() => { 
+            statusContainer.innerText = "Hiba az adatok beolvasásakor."; 
+            dbDateContainer.innerText = "Adatbázis: Nem elérhető";
+        });
 
-    // Szűrők beállítási lehetőségeinek kigyűjtése
     function setupFilters() {
         const years = new Set();
         const forgalmazok = new Set();
@@ -105,12 +110,10 @@
             if (f.forgalmazo) forgalmazok.add(f.forgalmazo);
         });
 
-        // Évek feltöltése (csökkenő sorrendben)
         Array.from(years).sort().reverse().forEach(y => {
             filterYear.innerHTML += `<option value="${y}">${y}</option>`;
         });
 
-        // Forgalmazók feltöltése (ábécé sorrendben)
         Array.from(forgalmazok).sort().forEach(forg => {
             if(forg !== "Ismeretlen") {
                 filterForgalmazo.innerHTML += `<option value="${forg}">${forg}</option>`;
@@ -118,7 +121,6 @@
         });
     }
 
-    // Kártyák kirajzolása fügvény
     function renderMovies(movies, showRank = false) {
         resultsContainer.innerHTML = '';
         if (movies.length === 0) {
@@ -146,12 +148,10 @@
         });
     }
 
-    // Sima szöveges keresés
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
         if (query.length < 2) { resultsContainer.innerHTML = ''; return; }
 
-        // Nullázzuk a többi lenyíló szűrőt, ha gépel a felhasználó
         filterYear.value = ""; filterMonth.value = ""; filterForgalmazo.value = "";
 
         const filtered = movieDatabase.filter(f => 
@@ -161,26 +161,22 @@
         renderMovies(filtered.slice(0, 50), false);
     });
 
-    // STATISZTIKAI FUNKCIÓK
-
-    // Minden idők Top 10 bevétel alapján
     function showAllTimeTop10() {
         searchInput.value = ""; filterYear.value = ""; filterMonth.value = ""; filterForgalmazo.value = "";
         const sorted = [...movieDatabase].sort((a, b) => b.bevetel - a.bevetel);
         renderMovies(sorted.slice(0, 10), true);
     }
 
-    // Év és Hónap szerinti Top 10
     function showFilteredTop10() {
         searchInput.value = ""; filterForgalmazo.value = "";
         const targetYear = filterYear.value;
         const targetMonth = filterMonth.value;
 
-        if (!targetYear) return; // Év kötelező a szűréshez
+        if (!targetYear) return;
 
         const filtered = movieDatabase.filter(f => {
             if (!f.bemutato || !f.bemutato.includes('-')) return false;
-            const parts = f.bemutato.split('-'); // ÉÉÉÉ-HH-NN
+            const parts = f.bemutato.split('-');
             const matchYear = parts[0] === targetYear;
             const matchMonth = targetMonth ? parts[1] === targetMonth : true;
             return matchYear && matchMonth;
@@ -190,7 +186,6 @@
         renderMovies(sorted.slice(0, 10), true);
     }
 
-    // Forgalmazó szerinti Top 10
     function showForgalmazoTop10() {
         searchInput.value = ""; filterYear.value = ""; filterMonth.value = "";
         const targetForg = filterForgalmazo.value;
