@@ -46,33 +46,39 @@
         resultsContainer.innerHTML = '';
         if (query.length < 2) return;
 
-        const filtered = movieDatabase.filter(f => f.nyers_adatok && f.nyers_adatok[0].toLowerCase().includes(query));
+        // Keresés úgy, hogy mindent kisbetűssé alakítunk a listában is a pontos egyezésért
+        const filtered = movieDatabase.filter(f => {
+            if (!f.nyers_adatok || f.nyers_adatok.length === 0) return false;
+            
+            // Megnézzük a magyar címet (0. elem) és az eredeti címet (1. elem, ha van)
+            const mCim = (f.nyers_adatok[0] || "").toLowerCase();
+            const eCim = (f.nyers_adatok[1] || "").toLowerCase();
+            
+            return mCim.includes(query) || eCim.includes(query);
+        });
 
         if (filtered.length === 0) {
             resultsContainer.innerHTML = '<div style="text-align:center;color:#888;">Nincs találat.</div>';
             return;
         }
 
-        filtered.slice(0, 20).forEach(f => {
+        filtered.slice(0, 50).forEach(f => {
             const d = f.nyers_adatok;
-            // Okos oszlop-kitaláló: Megkeressük, melyik elem dátum, és melyik a nagy szám
             let m_cim = d[0] || "Ismeretlen";
             let e_cim = d[1] || "";
             let bemutato = "Nincs adat";
             let nezok = "0";
             let bevetel = "0 Ft";
 
-            // Végigmegyünk a sor elemein és megtippeljük mi micsoda
             let szamok = [];
             d.forEach(elem => {
                 if (elem.includes('-') && elem.length >= 8) bemutato = elem.split(' ')[0];
-                let tiszta = elem.replace(/\./g, '').replace(/ /g, '').replace(/Ft/g, '');
+                let tiszta = elem.replace(/\./g, '').replace(/ /g, '').replace(/\xa0/g, '').replace(/Ft/g, '');
                 if (!isNaN(tiszta) && tiszta.length > 0 && elem !== d[0] && elem !== d[1]) {
                     szamok.push(Number(tiszta));
                 }
             });
 
-            // A kisebb szám a néző, a nagyobb a bevétel
             if (szamok.length >= 2) {
                 szamok.sort((a,b) => a - b);
                 nezok = szamok[0].toLocaleString('hu-HU') + " fő";
