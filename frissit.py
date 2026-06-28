@@ -11,6 +11,7 @@ headers = {
 
 url = "https://filmforgalmazok.hu/category/filmenkenti-osszesites/"
 
+# Weboldal elérése
 response = requests.get(url, headers=headers, timeout=30)
 soup = BeautifulSoup(response.text, "html.parser")
 
@@ -20,6 +21,11 @@ for link in soup.find_all("a"):
         xls_link = link.get("href")
         break
 
+if not xls_link:
+    print("Nem található .xls fájl.")
+    exit(1)
+
+# Fájl letöltése
 xls_data = requests.get(xls_link, headers=headers, timeout=30).content
 with open("adatok.xls", "wb") as f:
     f.write(xls_data)
@@ -30,34 +36,48 @@ def tiszta_szam(ertek):
     return int(szoveg) if szoveg.isdigit() else 0
 
 try:
-    # Beolvassuk a táblázatot (kihagyva az első 3 üres/fejléc sort)
-    df = pd.read_excel("adatok.xls", skiprows=3)
+    # Beolvassuk a táblázatot úgy, hogy megkeressük, hol kezdődik a valódi fejléc
+    raw_df = pd.read_excel("adatok.xls", header=None)
     
-    # KINYOMTATJUK AZ OSZLOPOKAT A HIBAKERESÉSHEZ
-    print("--- AZ EXCEL TÁBLÁZAT VALÓDI OSZLOPAI ---")
-    for i, col in enumerate(df.columns):
-        print(f"Index {i}: {col}")
-    print("-----------------------------------------")
+    header_row_index = 0
+    for idx, row in raw_df.iterrows():
+        row_str = str(row.values).lower()
+        if "magyar cím" in row_str or "magyar cim" in row_str:
+            header_row_index = idx
+            break
+            
+    # Újraolvasás a pontos fejlécindex alapján
+    df = pd.read_excel("adatok.xls", skiprows=header_row_index)
     
-    df = df.dropna(subset=[df.columns[0]])
+    # Oszlopok neveinek megtisztítása a biztonság kedvéért
+    df.columns = [str(c).strip().lower() for c in df.columns]
+    
+    # Megkeressük az oszlopokat név alapján (így ha elmozdulnak, akkor is működik)
+    col_magyar = [c for c in df.columns if "magyar" in c][0]
+    col_eredeti = [c for c in df.columns if "eredeti" in c or "gyári" in c][0]
+    col_bemutato = [c for c in df.columns if "bemutató" in c or "bemutato" in c][0]
+    col_nezoszam = [c for c in df.columns if "néző" in c or "nező" in c or "összes" in c and "néz" in c][0]
+    col_bevetel = [c for c in df.columns if "bevétel" in c or "bevetel" in c][0]
+
     output = []
     for _, row in df.iterrows():
-        m_cim = str(row.iloc[0]).strip()
+        m_cim = str(row[col_magyar]).strip()
         if m_cim.lower() in ["magyar cím", "nan", ""] or "összesen" in m_cim.lower():
             continue
             
         film = {
             "magyar_cim": m_cim,
-            "eredeti_cim": str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else "",
-            "bemutato": str(row.iloc[2]).split()[0] if pd.notna(row.iloc[2]) else "",
-            "nezoszam": tiszta_szam(row.iloc[3]),
-            "bevetel": tiszta_szam(row.iloc[4])
+            "eredeti_cim": str(row[col_eredeti]).strip() if pd.notna(row[col_eredeti]) else "",
+            "bemutato": str(row[col_bemutato]).split()[0] if pd.notna(row[col_bemutato]) else "",
+            "nezoszam": tiszta_szam(row[col_nezoszam]),
+            "bevetel": tiszta_szam(row[col_bevetel])
         }
         output.append(film)
 
     with open("adatok.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"Kész! {len(output)} film mentve.")
+    print(f"Sikeres frissítés! {len(output)} film mentve.")
 
 except Exception as e:
-    print(f"Hiba: {e}")
+    print(f"Hiba az oszlopok feldolgozásakor: {e}")
+    exit(1)
