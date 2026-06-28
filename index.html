@@ -10,7 +10,7 @@
         :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent-color: #00adb5; --secondary-text: #888; }
         body { font-family: -apple-system, sans-serif; background-color: var(--bg-color); color: var(--text-color); padding: 20px; }
         .container { max-width: 600px; margin: 0 auto; }
-        h1 { font-size: 24px; text-align: center; color: var(--accent-color); }
+        h1 { font-size: 24px; text-align: center; color: var(--accent-color); margin-bottom: 20px; }
         input[type="text"] { width: 100%; padding: 15px; font-size: 16px; border: none; border-radius: 12px; background-color: var(--card-bg); color: var(--text-color); box-sizing: border-box; margin-bottom: 20px; outline: none; }
         .status { text-align: center; color: var(--secondary-text); font-size: 14px; margin-bottom: 15px; }
         .movie-card { background-color: var(--card-bg); border-radius: 14px; padding: 16px; margin-bottom: 15px; }
@@ -26,7 +26,6 @@
     <h1>Film Forgalmazás Kereső</h1>
     <input type="text" id="search" placeholder="Film címe vagy részlete..." autocomplete="off">
     <div id="status" class="status">Betöltés...</div>
-    <div id="debug" style="padding:10px; background:#2a2a2a; border-radius:8px; margin-bottom:15px; font-size:12px; color:#ecc94b;">Minta filmek betöltés alatt...</div>
     <div id="results"></div>
 </div>
 <script>
@@ -34,41 +33,23 @@
     const searchInput = document.getElementById('search');
     const resultsContainer = document.getElementById('results');
     const statusContainer = document.getElementById('status');
-    const debugContainer = document.getElementById('debug');
 
-    // Kényszerítjük a telefont, hogy NE a memóriából olvasson (bővítjük egy véletlen számmal az URL-t)
     fetch('adatok.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
             movieDatabase = data;
             statusContainer.innerText = `${data.length} film kész a keresésre.`;
-            
-            // Kiíratjuk az első 3 film nyers adatait a sárga dobozba ellenőrzésként
-            if(data.length > 0) {
-                let sample = "Első filmek a listában:<br>";
-                data.slice(0, 3).forEach((f, i) => {
-                    sample += `${i+1}: ${JSON.stringify(f.nyers_adatok)}<br>`;
-                });
-                debugContainer.innerHTML = sample;
-            } else {
-                debugContainer.innerHTML = "A betöltött adatok.json üres!";
-            }
-        }).catch(() => { 
-            statusContainer.innerText = "Hiba az adatok beolvasásakor."; 
-            debugContainer.innerHTML = "Nem sikerült elérni az adatok.json-t.";
-        });
+        }).catch(() => { statusContainer.innerText = "Hiba az adatok beolvasásakor."; });
 
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
         resultsContainer.innerHTML = '';
         if (query.length < 2) return;
 
-        const filtered = movieDatabase.filter(f => {
-            if (!f.nyers_adatok || f.nyers_adatok.length === 0) return false;
-            const mCim = (f.nyers_adatok[0] || "").toLowerCase();
-            const eCim = (f.nyers_adatok[1] || "").toLowerCase();
-            return mCim.includes(query) || eCim.includes(query);
-        });
+        const filtered = movieDatabase.filter(f => 
+            f.magyar_cim.toLowerCase().includes(query) || 
+            f.eredeti_cim.toLowerCase().includes(query)
+        );
 
         if (filtered.length === 0) {
             resultsContainer.innerHTML = '<div style="text-align:center;color:#888;">Nincs találat.</div>';
@@ -76,37 +57,16 @@
         }
 
         filtered.slice(0, 50).forEach(f => {
-            const d = f.nyers_adatok;
-            let m_cim = d[0] || "Ismeretlen";
-            let e_cim = d[1] || "";
-            let bemutato = "Nincs adat";
-            let nezok = "0";
-            let bevetel = "0 Ft";
-
-            let szamok = [];
-            d.forEach(elem => {
-                if (elem.includes('-') && elem.length >= 8) bemutato = elem.split(' ')[0];
-                let tiszta = elem.replace(/\./g, '').replace(/ /g, '').replace(/\xa0/g, '').replace(/Ft/g, '');
-                if (!isNaN(tiszta) && tiszta.length > 0 && elem !== d[0] && elem !== d[1]) {
-                    szamok.push(Number(tiszta));
-                }
-            });
-
-            if (szamok.length >= 2) {
-                szamok.sort((a,b) => a - b);
-                nezok = szamok[0].toLocaleString('hu-HU') + " fő";
-                bevetel = szamok[1].toLocaleString('hu-HU') + " Ft";
-            } else if (szamok.length === 1) {
-                bevetel = szamok[0].toLocaleString('hu-HU') + " Ft";
-            }
+            const nezok = Number(f.nezoszam).toLocaleString('hu-HU') + " fő";
+            const bevetel = Number(f.bevetel).toLocaleString('hu-HU') + " Ft";
 
             const card = document.createElement('div');
             card.className = 'movie-card';
             card.innerHTML = `
-                <div class="magyar-cim">${m_cim}</div>
-                <div class="eredeti-cim">${e_cim}</div>
+                <div class="magyar-cim">${f.magyar_cim}</div>
+                <div class="eredeti-cim">${f.eredeti_cim || '-'}</div>
                 <div class="info-grid">
-                    <div class="info-item"><span>Bemutató</span><strong>${bemutato}</strong></div>
+                    <div class="info-item"><span>Besutató</span><strong>${f.bemutato}</strong></div>
                     <div class="info-item"><span>Nézőszám</span><strong>${nezok}</strong></div>
                     <div class="info-item" style="grid-column: span 2;"><span>Bevétel</span><strong style="color:#ecc94b;">${bevetel}</strong></div>
                 </div>`;
