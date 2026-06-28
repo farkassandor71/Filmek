@@ -26,6 +26,7 @@
     <h1>Film Forgalmazás Kereső</h1>
     <input type="text" id="search" placeholder="Film címe vagy részlete..." autocomplete="off">
     <div id="status" class="status">Betöltés...</div>
+    <div id="debug" style="padding:10px; background:#2a2a2a; border-radius:8px; margin-bottom:15px; font-size:12px; color:#ecc94b;">Minta filmek betöltés alatt...</div>
     <div id="results"></div>
 </div>
 <script>
@@ -33,27 +34,39 @@
     const searchInput = document.getElementById('search');
     const resultsContainer = document.getElementById('results');
     const statusContainer = document.getElementById('status');
+    const debugContainer = document.getElementById('debug');
 
-    fetch('adatok.json')
+    // Kényszerítjük a telefont, hogy NE a memóriából olvasson (bővítjük egy véletlen számmal az URL-t)
+    fetch('adatok.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
             movieDatabase = data;
             statusContainer.innerText = `${data.length} film kész a keresésre.`;
-        }).catch(() => { statusContainer.innerText = "Hiba az adatok beolvasásakor."; });
+            
+            // Kiíratjuk az első 3 film nyers adatait a sárga dobozba ellenőrzésként
+            if(data.length > 0) {
+                let sample = "Első filmek a listában:<br>";
+                data.slice(0, 3).forEach((f, i) => {
+                    sample += `${i+1}: ${JSON.stringify(f.nyers_adatok)}<br>`;
+                });
+                debugContainer.innerHTML = sample;
+            } else {
+                debugContainer.innerHTML = "A betöltött adatok.json üres!";
+            }
+        }).catch(() => { 
+            statusContainer.innerText = "Hiba az adatok beolvasásakor."; 
+            debugContainer.innerHTML = "Nem sikerült elérni az adatok.json-t.";
+        });
 
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
         resultsContainer.innerHTML = '';
         if (query.length < 2) return;
 
-        // Keresés úgy, hogy mindent kisbetűssé alakítunk a listában is a pontos egyezésért
         const filtered = movieDatabase.filter(f => {
             if (!f.nyers_adatok || f.nyers_adatok.length === 0) return false;
-            
-            // Megnézzük a magyar címet (0. elem) és az eredeti címet (1. elem, ha van)
             const mCim = (f.nyers_adatok[0] || "").toLowerCase();
             const eCim = (f.nyers_adatok[1] || "").toLowerCase();
-            
             return mCim.includes(query) || eCim.includes(query);
         });
 
