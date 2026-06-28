@@ -21,24 +21,33 @@ except Exception as e:
     print(f"Letöltési hiba: {e}")
     exit(1)
 
-# Számtisztító funkció
+# SZUPER számtisztító funkció, ami a tizedesvessző utáni filléreket is levágja
 def tiszta_szam(ertek):
     if pd.isna(ertek): return 0
-    szoveg = str(ertek).replace('.', '').replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
+    szoveg = str(ertek).strip()
+    
+    # Ha van benne tizedesvessző (pl. 1846518282,0), levágjuk a vessző utáni részt
+    if ',' in szoveg:
+        szoveg = szoveg.split(',')[0]
+        
+    # Ha esetleg pont lenne benne tizedesként (pl. 1846518282.0), azt is levágjuk
+    if '.' in szoveg:
+        szoveg = szoveg.split('.')[0]
+        
+    # Kiszedünk minden maradék szóközt, törhetetlen szóközt és Ft jelet
+    szoveg = szoveg.replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
+    
     return int(szoveg) if szoveg.isdigit() else 0
 
-# 2. Precíz feldolgozás a megadott oszlopok alapján
+# 2. Precíz feldolgozás
 try:
-    # A 2. sor a fejléc, tehát a skiprows=1 beállítással a 2. sor lesz az oszlopnév
     df = pd.read_excel("adatok.xls", skiprows=1)
     output = []
     
     for _, row in df.iterrows():
         try:
-            # Mivel az A oszlop üres, row.iloc[0] az üres stáb. row.iloc[1] a Magyar cím!
             m_cim = str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else ""
             
-            # Ha fejléc ismétlődés vagy üres/összesítő sor, kihagyjuk
             if m_cim == "" or m_cim.lower() in ["cím", "cim", "nan"] or "összesen" in m_cim.lower():
                 continue
             
