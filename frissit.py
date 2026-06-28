@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-from datetime import datetime
+import time
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 url = "https://filmforgalmazok.hu/category/filmenkenti-osszesites/"
@@ -31,13 +31,16 @@ def tiszta_szam(ertek):
     szoveg = szoveg.replace(' ', '').replace('\xa0', '').replace('Ft', '').strip()
     return int(szoveg) if szoveg.isdigit() else 0
 
-# Hónapok magyarosítása
+# Idő lekérése beépített időbélyeggel, külső modul nélkül
+helyi_ido = time.localtime()
+ev = helyi_ido.tm_year
+honap_szam = helyi_ido.tm_mon
+
 honapok = {
     1: "január", 2: "február", 3: "március", 4: "április", 5: "május", 6: "június",
     7: "július", 8: "augusztus", 9: "szeptember", 10: "október", 11: "november", 12: "december"
 }
-ma = datetime.now()
-aktualis_datum = f"{ma.year}. {honapok[ma.month]}"
+aktualis_datum = f"{ev}. {honapok.get(honap_szam, 'június')}"
 
 # 2. Precíz feldolgozás
 try:
@@ -63,7 +66,7 @@ try:
         except:
             continue
 
-    # Új struktúra: elmentjük a dátumot ÉS a filmeket is egy közös csomagba
+    # Mentés az új struktúrában
     vegso_adatok = {
         "frissitve": aktualis_datum,
         "filmek": filmek_listaja
