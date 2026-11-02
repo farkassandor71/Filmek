@@ -14,8 +14,8 @@
       "eredeti_cim": "HOGYAN TUDNÉK ÉLNI NÉLKÜLED?",
       "forgalmazo": "INTERCOM",
       "bemutato": "2024-12-12",
-      "bevetel": 2343553801,
-      "nezoszam": 1086771
+      "bevetel": 2343714461,
+      "nezoszam": 1086856
     },
     {
       "magyar_cim": "ZOOTROPOLIS 2",
@@ -54,8 +54,8 @@
       "eredeti_cim": "SPIDER-MAN: BRAND NEW DAY",
       "forgalmazo": "INTERCOM",
       "bemutato": "2026-07-30",
-      "bevetel": 1776021611,
-      "nezoszam": 632782
+      "bevetel": 1801641101,
+      "nezoszam": 644149
     },
     {
       "magyar_cim": "AVATAR: TŰZ ÉS HAMU",
@@ -78,6 +78,22 @@
       "eredeti_cim": "THE ODYSSEY",
       "forgalmazo": "UIP",
       "bemutato": "2026-07-16",
+      "bevetel": 1493540105,
+      "nezoszam": 527954
+    },
+    {
+      "magyar_cim": "BOSSZÚÁLLÓK: VÉGJÁTÉK RÁADÁS",
+      "eredeti_cim": "AVENGERS: ENDGAME ENCORE",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-09-24",
+      "bevetel": 1467550847,
+      "nezoszam": 889728
+    },
+    {
+      "magyar_cim": "ODÜSSZEIA",
+      "eredeti_cim": "THE ODYSSEY",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-07-16",
       "bevetel": 1447445950,
       "nezoszam": 509224
     },
@@ -88,14 +104,6 @@
       "bemutato": "2024-06-13",
       "bevetel": 1441692883,
       "nezoszam": 635498
-    },
-    {
-      "magyar_cim": "BOSSZÚÁLLÓK: VÉGJÁTÉK RÁADÁS",
-      "eredeti_cim": "AVENGERS: ENDGAME ENCORE",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-09-24",
-      "bevetel": 1415401197,
-      "nezoszam": 870443
     },
     {
       "magyar_cim": "STAR WARS : AZ UTOLSÓ JEDIK",
@@ -214,8 +222,8 @@
       "eredeti_cim": "THE DEVIL WEARS PRADA 2",
       "forgalmazo": "FORUM",
       "bemutato": "2026-04-30",
-      "bevetel": 949823512,
-      "nezoszam": 360359
+      "bevetel": 949970372,
+      "nezoszam": 360458
     },
     {
       "magyar_cim": "BOHÉM RAPSZÓDIA",
@@ -310,8 +318,8 @@
       "eredeti_cim": "ITT ÉRZEM MAGAM OTTHON",
       "forgalmazo": "FORUM",
       "bemutato": "2026-02-19",
-      "bevetel": 770754341,
-      "nezoszam": 297943
+      "bevetel": 770831811,
+      "nezoszam": 297963
     },
     {
       "magyar_cim": "MAMMA MIA! SOSE HAGYJUK ABBA",
@@ -358,8 +366,8 @@
       "eredeti_cim": "SEMMELWEIS",
       "forgalmazo": "INTERCOM",
       "bemutato": "2023-11-30",
-      "bevetel": 735714636,
-      "nezoszam": 348637
+      "bevetel": 735777636,
+      "nezoszam": 348667
     },
     {
       "magyar_cim": "JURASSIC WORLD: VILÁGURALOM",
@@ -384,6 +392,14 @@
       "bemutato": "2015-06-15",
       "bevetel": 712943372,
       "nezoszam": 486984
+    },
+    {
+      "magyar_cim": "MINYONOK ÉS SZÖRNYEK",
+      "eredeti_cim": "MINIONS & MONSTERS",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-06-25",
+      "bevetel": 693401604,
+      "nezoszam": 277087
     },
     {
       "magyar_cim": "STAR WARS III. RÉSZ: A SITH-EK BOSSZÚJA / 20. ÉVFORDULÓ",
@@ -416,14 +432,6 @@
       "bemutato": "2010-07-08",
       "bevetel": 685411064,
       "nezoszam": 537232
-    },
-    {
-      "magyar_cim": "MINYONOK ÉS SZÖRNYEK",
-      "eredeti_cim": "MINIONS & MONSTERS",
-      "forgalmazo": "UIP",
-      "bemutato": "2026-06-25",
-      "bevetel": 680999587,
-      "nezoszam": 271671
     },
     {
       "magyar_cim": "SONIC, A SÜNDISZNÓ 3.",
@@ -758,8 +766,8 @@
       "eredeti_cim": "THE MANDALORIAN AND GROGU",
       "forgalmazo": "FORUM",
       "bemutato": "2026-05-21",
-      "bevetel": 540200695,
-      "nezoszam": 192415
+      "bevetel": 540220495,
+      "nezoszam": 192435
     },
     {
       "magyar_cim": "VALAMI AMERIKA 3",
@@ -822,8 +830,8 @@
       "eredeti_cim": "TOY STORY 5",
       "forgalmazo": "FORUM",
       "bemutato": "2026-06-18",
-      "bevetel": 525803019,
-      "nezoszam": 210686
+      "bevetel": 526092359,
+      "nezoszam": 210849
     },
     {
       "magyar_cim": "A KARIB-TENGER KALÓZAI: ISMERETLEN VIZEKEN",
@@ -994,20 +1002,20 @@
       "nezoszam": 334409
     },
     {
+      "magyar_cim": "MAGYAR MENYEGZŐ",
+      "eredeti_cim": "MAGYAR MENYEGZŐ",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-01-22",
+      "bevetel": 479852429,
+      "nezoszam": 220798
+    },
+    {
       "magyar_cim": "AQUAMAN ÉS AZ ELVESZETT KIRÁLYSÁG",
       "eredeti_cim": "AQUAMAN AND THE LOST KINGDOM",
       "forgalmazo": "INTERCOM",
       "bemutato": "2023-12-21",
       "bevetel": 479555748,
       "nezoszam": 192413
-    },
-    {
-      "magyar_cim": "MAGYAR MENYEGZŐ",
-      "eredeti_cim": "MAGYAR MENYEGZŐ",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-01-22",
-      "bevetel": 479083572,
-      "nezoszam": 220693
     },
     {
       "magyar_cim": "VALAMI AMERIKA 2.",
@@ -1642,6 +1650,14 @@
       "nezoszam": 285399
     },
     {
+      "magyar_cim": "MANCS ŐRJÁRAT: A DÍNÓFILM",
+      "eredeti_cim": "PAW PATROL: THE DINO MOVIE",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-08-06",
+      "bevetel": 356852812,
+      "nezoszam": 147714
+    },
+    {
       "magyar_cim": "KACSALÁBON",
       "eredeti_cim": "MIGRATION",
       "forgalmazo": "UIP",
@@ -1656,6 +1672,14 @@
       "bemutato": "2004-02-05",
       "bevetel": 355594382,
       "nezoszam": 456709
+    },
+    {
+      "magyar_cim": "VERITY",
+      "eredeti_cim": "VERITY",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-10-01",
+      "bevetel": 355564296,
+      "nezoszam": 141679
     },
     {
       "magyar_cim": "DOCTOR STRANGE",
@@ -1794,6 +1818,14 @@
       "nezoszam": 319078
     },
     {
+      "magyar_cim": "VAIANA",
+      "eredeti_cim": "VAIANA",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-07-09",
+      "bevetel": 336866182,
+      "nezoszam": 133172
+    },
+    {
       "magyar_cim": "VERDÁK 2",
       "eredeti_cim": "CARS 2",
       "forgalmazo": "FÓRUM HUNGARY",
@@ -1904,14 +1936,6 @@
       "bemutato": "2003-09-25",
       "bevetel": 329045094,
       "nezoszam": 399649
-    },
-    {
-      "magyar_cim": "MANCS ŐRJÁRAT: A DÍNÓFILM",
-      "eredeti_cim": "PAW PATROL: THE DINO MOVIE",
-      "forgalmazo": "UIP",
-      "bemutato": "2026-08-06",
-      "bevetel": 328616532,
-      "nezoszam": 136203
     },
     {
       "magyar_cim": "AMERIKA KAPITÁNY: SZÉP ÚJ VILÁG",
@@ -2094,8 +2118,8 @@
       "eredeti_cim": "HOPPERS",
       "forgalmazo": "FORUM",
       "bemutato": "2026-03-05",
-      "bevetel": 308554773,
-      "nezoszam": 126075
+      "bevetel": 308599723,
+      "nezoszam": 126104
     },
     {
       "magyar_cim": "INDIANA JONES 4",
@@ -2264,6 +2288,14 @@
       "bemutato": "2017-03-02",
       "bevetel": 296308913,
       "nezoszam": 205049
+    },
+    {
+      "magyar_cim": "A VADON SZÍVE",
+      "eredeti_cim": "HEART OF THE BEAST",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-09-24",
+      "bevetel": 295965674,
+      "nezoszam": 118262
     },
     {
       "magyar_cim": "UTAZÓK",
@@ -2450,6 +2482,14 @@
       "nezoszam": 115026
     },
     {
+      "magyar_cim": "BIRKAKRIMI",
+      "eredeti_cim": "THE SHEEP DETECTIVES",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-05-07",
+      "bevetel": 282194090,
+      "nezoszam": 113130
+    },
+    {
       "magyar_cim": "HUPIKÉK TÖRPIKÉK 2",
       "eredeti_cim": "SMURFS 2",
       "forgalmazo": "INTERCOM",
@@ -2464,14 +2504,6 @@
       "bemutato": "2018-03-29",
       "bevetel": 281711284,
       "nezoszam": 173646
-    },
-    {
-      "magyar_cim": "BIRKAKRIMI",
-      "eredeti_cim": "THE SHEEP DETECTIVES",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-05-07",
-      "bevetel": 281555420,
-      "nezoszam": 112723
     },
     {
       "magyar_cim": "A VAD ROBOT",
@@ -2720,6 +2752,14 @@
       "bemutato": "2007-12-20",
       "bevetel": 264947233,
       "nezoszam": 290088
+    },
+    {
+      "magyar_cim": "A KAPTÁR",
+      "eredeti_cim": "RESIDENT EVIL",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-09-17",
+      "bevetel": 264698626,
+      "nezoszam": 99525
     },
     {
       "magyar_cim": "ÖRÖKKÉVALÓK",
@@ -2986,6 +3026,14 @@
       "nezoszam": 203008
     },
     {
+      "magyar_cim": "VERDÁK: 20. ÉVFORDULÓ",
+      "eredeti_cim": "CARS: 20TH ANNIVERSARY",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-09-17",
+      "bevetel": 241873376,
+      "nezoszam": 280581
+    },
+    {
       "magyar_cim": "AMERIKA KAPITÁNY: A TÉL KATONÁJA",
       "eredeti_cim": "CAPTAIN AMERICA: THE WINTER SOLDIER",
       "forgalmazo": "FÓRUM HUNGARY",
@@ -3232,14 +3280,6 @@
       "bemutato": "2025-07-10",
       "bevetel": 230847421,
       "nezoszam": 86746
-    },
-    {
-      "magyar_cim": "VERDÁK: 20. ÉVFORDULÓ",
-      "eredeti_cim": "CARS: 20TH ANNIVERSARY",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-09-17",
-      "bevetel": 230425361,
-      "nezoszam": 275162
     },
     {
       "magyar_cim": "DIE HARD - DRÁGÁBB, MINT AZ ÉLETED ( 5 )",
@@ -4866,6 +4906,14 @@
       "nezoszam": 119903
     },
     {
+      "magyar_cim": "CSAJOS HÉTVÉGE",
+      "eredeti_cim": "SPA WEEKEND",
+      "forgalmazo": "PROROM",
+      "bemutato": "2026-09-17",
+      "bevetel": 168077282,
+      "nezoszam": 65695
+    },
+    {
       "magyar_cim": "A CSODÁLATOS PÓKEMEBER",
       "eredeti_cim": "THE AMAZING SPIDER - MAN",
       "forgalmazo": "INTERCOM",
@@ -4904,6 +4952,14 @@
       "bemutato": "2015-02-05",
       "bevetel": 167790063,
       "nezoszam": 106585
+    },
+    {
+      "magyar_cim": "INSIDIOUS – KÖZTÜNK JÁRNAK",
+      "eredeti_cim": "INSIDIOUS: OUT OF THE FURTHER",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-08-20",
+      "bevetel": 167690726,
+      "nezoszam": 60445
     },
     {
       "magyar_cim": "KERESD A NŐT",
@@ -5178,14 +5234,6 @@
       "nezoszam": 61298
     },
     {
-      "magyar_cim": "INSIDIOUS – KÖZTÜNK JÁRNAK",
-      "eredeti_cim": "INSIDIOUS: OUT OF THE FURTHER",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-08-20",
-      "bevetel": 159661576,
-      "nezoszam": 57072
-    },
-    {
       "magyar_cim": "ÍZEK IMÁJK SZERELMEK",
       "eredeti_cim": "EAT PRAY LOVE",
       "forgalmazo": "INTERCOM",
@@ -5458,14 +5506,6 @@
       "nezoszam": 57734
     },
     {
-      "magyar_cim": "A KAPTÁR",
-      "eredeti_cim": "RESIDENT EVIL",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-09-17",
-      "bevetel": 152583940,
-      "nezoszam": 54187
-    },
-    {
       "magyar_cim": "VAN HELSING",
       "eredeti_cim": "VAN HELSING",
       "forgalmazo": "UIP DUNA FILM",
@@ -5578,6 +5618,14 @@
       "nezoszam": 305965
     },
     {
+      "magyar_cim": "GOAT - WILL, A BAJNOK",
+      "eredeti_cim": "GOAT",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-03-26",
+      "bevetel": 149543884,
+      "nezoszam": 60826
+    },
+    {
       "magyar_cim": "MÍG A JACKPOT EL NEM VÁLASZT",
       "eredeti_cim": "WHAT HAPPENS IN VEGAS",
       "forgalmazo": "INTERCOM",
@@ -5592,14 +5640,6 @@
       "bemutato": "2006-11-09",
       "bevetel": 149534861,
       "nezoszam": 146421
-    },
-    {
-      "magyar_cim": "GOAT - WILL, A BAJNOK",
-      "eredeti_cim": "GOAT",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-03-26",
-      "bevetel": 149520334,
-      "nezoszam": 60811
     },
     {
       "magyar_cim": "KÉPZELETBELI BARÁTOK",
@@ -5938,20 +5978,20 @@
       "nezoszam": 53391
     },
     {
+      "magyar_cim": "AZ OAK STREET VÉGE",
+      "eredeti_cim": "THE END OF OAK STREET",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-08-13",
+      "bevetel": 141438895,
+      "nezoszam": 52464
+    },
+    {
       "magyar_cim": "PÓKEMBER 3",
       "eredeti_cim": "SPIDER MAN 3",
       "forgalmazo": "INTERCOM",
       "bemutato": "2007-05-03",
       "bevetel": 141333000,
       "nezoszam": 147263
-    },
-    {
-      "magyar_cim": "AZ OAK STREET VÉGE",
-      "eredeti_cim": "THE END OF OAK STREET",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-08-13",
-      "bevetel": 141207165,
-      "nezoszam": 52390
     },
     {
       "magyar_cim": "AZ ELSŐ EMBER",
@@ -6072,6 +6112,14 @@
       "bemutato": "2014-12-25",
       "bevetel": 138633709,
       "nezoszam": 95919
+    },
+    {
+      "magyar_cim": "A MÁSIK MAMI",
+      "eredeti_cim": "OTHER MOMMY",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-10-08",
+      "bevetel": 138592597,
+      "nezoszam": 60331
     },
     {
       "magyar_cim": "EVOLÚCIÓ",
@@ -6314,6 +6362,14 @@
       "nezoszam": 467645
     },
     {
+      "magyar_cim": "MEGHÍVÁS",
+      "eredeti_cim": "THE INVITE",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-07-02",
+      "bevetel": 133818332,
+      "nezoszam": 50211
+    },
+    {
       "magyar_cim": "NEM KELLESZ ELÉGGÉ",
       "eredeti_cim": "HES JUST NOT THAT INTO YOU",
       "forgalmazo": "INTERCOM",
@@ -6506,14 +6562,6 @@
       "nezoszam": 99820
     },
     {
-      "magyar_cim": "MEGHÍVÁS",
-      "eredeti_cim": "THE INVITE",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-07-02",
-      "bevetel": 129424656,
-      "nezoszam": 48632
-    },
-    {
       "magyar_cim": "A BŰN ÚTJA",
       "eredeti_cim": "CRIME 101",
       "forgalmazo": "INTERCOM",
@@ -6560,6 +6608,14 @@
       "bemutato": "2011-11-24",
       "bevetel": 128748631,
       "nezoszam": 109963
+    },
+    {
+      "magyar_cim": "ÁTKOZOTT BOSZORKÁK 2.",
+      "eredeti_cim": "PRACTICAL MAGIC 2",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-09-10",
+      "bevetel": 128488354,
+      "nezoszam": 49433
     },
     {
       "magyar_cim": "MÁR MEGINT NEM FÉREK A BŐRÖDBE",
@@ -6634,6 +6690,14 @@
       "nezoszam": 260490
     },
     {
+      "magyar_cim": "CSENDES BARÁT",
+      "eredeti_cim": "CSENDES BARÁT",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-01-29",
+      "bevetel": 126235264,
+      "nezoszam": 52764
+    },
+    {
       "magyar_cim": "CSAK EGY ÉJSZAKA",
       "eredeti_cim": "ONE NIGHT ONLY",
       "forgalmazo": "UIP",
@@ -6648,14 +6712,6 @@
       "bemutato": "2006-03-23",
       "bevetel": 125996086,
       "nezoszam": 149760
-    },
-    {
-      "magyar_cim": "CSENDES BARÁT",
-      "eredeti_cim": "CSENDES BARÁT",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2026-01-29",
-      "bevetel": 125592974,
-      "nezoszam": 52455
     },
     {
       "magyar_cim": "SZÖVETSÉGESEK",
@@ -7554,6 +7610,14 @@
       "nezoszam": 71829
     },
     {
+      "magyar_cim": "TORRENTE 6. - AZ ELNÖKI ÜGY",
+      "eredeti_cim": "TORRENTE PRESIDENTE",
+      "forgalmazo": "CINETEL MEDIA DISTRIBUTION",
+      "bemutato": "2026-09-03",
+      "bevetel": 111721110,
+      "nezoszam": 41105
+    },
+    {
       "magyar_cim": "KUTYÁK ÉS MACSKÁK-A RUSNYA MACSKA BOSSZÚJA(2)",
       "eredeti_cim": "CATS AND GOGS 2.",
       "forgalmazo": "INTERCOM",
@@ -7762,14 +7826,6 @@
       "nezoszam": 86751
     },
     {
-      "magyar_cim": "ÁTKOZOTT BOSZORKÁK 2.",
-      "eredeti_cim": "PRACTICAL MAGIC 2",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-09-10",
-      "bevetel": 110132829,
-      "nezoszam": 42016
-    },
-    {
       "magyar_cim": "A HALÁLKÁRTYA",
       "eredeti_cim": "TAROT",
       "forgalmazo": "INTERCOM",
@@ -7938,6 +7994,14 @@
       "nezoszam": 101736
     },
     {
+      "magyar_cim": "BOGYÓ ÉS BABÓCA 7. - MESÉK A PÖTTYÖS HÁZBÓL",
+      "eredeti_cim": "BOGYÓ ÉS BABÓCA 7. - MESÉK A PÖTTYÖS HÁZBÓL",
+      "forgalmazo": "KEDD KFT.",
+      "bemutato": "2025-08-14",
+      "bevetel": 107848171,
+      "nezoszam": 45594
+    },
+    {
       "magyar_cim": "CSATAHAJÓ",
       "eredeti_cim": "BATTLESHIP",
       "forgalmazo": "UIP DUNA FILM",
@@ -8042,14 +8106,6 @@
       "nezoszam": 78137
     },
     {
-      "magyar_cim": "A VADON SZÍVE",
-      "eredeti_cim": "HEART OF THE BEAST",
-      "forgalmazo": "UIP",
-      "bemutato": "2026-09-24",
-      "bevetel": 106685023,
-      "nezoszam": 40950
-    },
-    {
       "magyar_cim": "PIROSSZKA - A JÓ A FARKAS MEGANAGYI",
       "eredeti_cim": "HOODWINKED",
       "forgalmazo": "SPI",
@@ -8064,14 +8120,6 @@
       "bemutato": "2019-06-27",
       "bevetel": 106261844,
       "nezoszam": 74612
-    },
-    {
-      "magyar_cim": "BOGYÓ ÉS BABÓCA 7. - MESÉK A PÖTTYÖS HÁZBÓL",
-      "eredeti_cim": "BOGYÓ ÉS BABÓCA 7. - MESÉK A PÖTTYÖS HÁZBÓL",
-      "forgalmazo": "KEDD KFT.",
-      "bemutato": "2025-08-14",
-      "bevetel": 105971361,
-      "nezoszam": 44768
     },
     {
       "magyar_cim": "FLINSTONES",
@@ -8242,14 +8290,6 @@
       "nezoszam": 145852
     },
     {
-      "magyar_cim": "TORRENTE 6. - AZ ELNÖKI ÜGY",
-      "eredeti_cim": "TORRENTE PRESIDENTE",
-      "forgalmazo": "CINETEL MEDIA DISTRIBUTION",
-      "bemutato": "2026-09-03",
-      "bevetel": 103550785,
-      "nezoszam": 37198
-    },
-    {
       "magyar_cim": "TÖKALSÓ",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -8408,6 +8448,14 @@
       "bemutato": "2024-01-04",
       "bevetel": 101697035,
       "nezoszam": 43332
+    },
+    {
+      "magyar_cim": "AZ ÖRÖKSÉG",
+      "eredeti_cim": "AZ ÖRÖKSÉG",
+      "forgalmazo": "VERTIGO",
+      "bemutato": "2026-10-22",
+      "bevetel": 101628997,
+      "nezoszam": 40271
     },
     {
       "magyar_cim": "ÁL-ARC",
@@ -9162,6 +9210,14 @@
       "nezoszam": 88083
     },
     {
+      "magyar_cim": "GONOSZ HALOTT: ÉGJ!",
+      "eredeti_cim": "EVIL DEAD BURN",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-07-09",
+      "bevetel": 91514678,
+      "nezoszam": 31947
+    },
+    {
       "magyar_cim": "MISSION: IMPOSSIBLE",
       "eredeti_cim": "",
       "forgalmazo": "UIP DUNA FILM",
@@ -9392,14 +9448,6 @@
       "bemutato": "2004-12-23",
       "bevetel": 88574384,
       "nezoszam": 102246
-    },
-    {
-      "magyar_cim": "GONOSZ HALOTT: ÉGJ!",
-      "eredeti_cim": "EVIL DEAD BURN",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-07-09",
-      "bevetel": 88491868,
-      "nezoszam": 30712
     },
     {
       "magyar_cim": "A PART",
@@ -9954,14 +10002,6 @@
       "nezoszam": 57281
     },
     {
-      "magyar_cim": "CSAJOS HÉTVÉGE",
-      "eredeti_cim": "SPA WEEKEND",
-      "forgalmazo": "PROROM",
-      "bemutato": "2026-09-17",
-      "bevetel": 81946922,
-      "nezoszam": 30597
-    },
-    {
       "magyar_cim": "HETEDIK",
       "eredeti_cim": "",
       "forgalmazo": "FLAMEX",
@@ -10336,6 +10376,14 @@
       "bemutato": "1996-12-19",
       "bevetel": 78365848,
       "nezoszam": 289613
+    },
+    {
+      "magyar_cim": "MÉG EGY KÍVÁNSÁG",
+      "eredeti_cim": "MÉG EGY KÍVÁNSÁG",
+      "forgalmazo": "MEGAFILM",
+      "bemutato": "2026-10-15",
+      "bevetel": 78325614,
+      "nezoszam": 38379
     },
     {
       "magyar_cim": "VIRSLIPARTI",
@@ -10746,20 +10794,20 @@
       "nezoszam": 264237
     },
     {
+      "magyar_cim": "CSONGOR ÉS TÜNDE",
+      "eredeti_cim": "CSONGOR ÉS TÜNDE",
+      "forgalmazo": "FORUM",
+      "bemutato": "2025-04-17",
+      "bevetel": 74405223,
+      "nezoszam": 41693
+    },
+    {
       "magyar_cim": "RAYA ÉS AZ UTOLSÓ SÁRKÁNY",
       "eredeti_cim": "RAYA AND THE LAST DRAGON",
       "forgalmazo": "FORUM",
       "bemutato": "2021-07-01",
       "bevetel": 74381317,
       "nezoszam": 50687
-    },
-    {
-      "magyar_cim": "CSONGOR ÉS TÜNDE",
-      "eredeti_cim": "CSONGOR ÉS TÜNDE",
-      "forgalmazo": "FORUM",
-      "bemutato": "2025-04-17",
-      "bevetel": 74348823,
-      "nezoszam": 41646
     },
     {
       "magyar_cim": "AZ ÉSZAKI",
@@ -11248,6 +11296,14 @@
       "bemutato": "2001-03-15",
       "bevetel": 70926217,
       "nezoszam": 105040
+    },
+    {
+      "magyar_cim": "ELFELEJTETT SZIGET",
+      "eredeti_cim": "FORGOTTEN ISLAND",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-10-15",
+      "bevetel": 70885685,
+      "nezoszam": 28106
     },
     {
       "magyar_cim": "HOGYAN ROHANJ VESZTEDBE",
@@ -11906,6 +11962,14 @@
       "nezoszam": 786374
     },
     {
+      "magyar_cim": "FÉLRELÉPNI SZABAD",
+      "eredeti_cim": "FÉLRELÉPNI SZABAD",
+      "forgalmazo": "MEGAFILM",
+      "bemutato": "2026-09-24",
+      "bevetel": 65981083,
+      "nezoszam": 29103
+    },
+    {
       "magyar_cim": "CSÁBÍTÁS ELMÉLETE",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -11960,6 +12024,14 @@
       "bemutato": "2005-09-29",
       "bevetel": 65562090,
       "nezoszam": 69400
+    },
+    {
+      "magyar_cim": "PRÉRIFARKAS VISSZAVÁG",
+      "eredeti_cim": "COYOTE VS. ACME",
+      "forgalmazo": "PROROM",
+      "bemutato": "2026-09-24",
+      "bevetel": 65547319,
+      "nezoszam": 27509
     },
     {
       "magyar_cim": "GAGYI MAMI: MINT KÉT TOJÁS ( 3 )",
@@ -12354,6 +12426,14 @@
       "nezoszam": 46814
     },
     {
+      "magyar_cim": "ÉLETFUTÁR",
+      "eredeti_cim": "RUNNER",
+      "forgalmazo": "PROROM",
+      "bemutato": "2026-09-10",
+      "bevetel": 62735411,
+      "nezoszam": 24079
+    },
+    {
       "magyar_cim": "ELLIOTT, A SÁRKÁNY",
       "eredeti_cim": "PETE'S DRAGON",
       "forgalmazo": "FÓRUM HUNGARY",
@@ -12512,6 +12592,14 @@
       "bemutato": "2014-01-16",
       "bevetel": 61698091,
       "nezoszam": 46038
+    },
+    {
+      "magyar_cim": "DIGGER",
+      "eredeti_cim": "DIGGER",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-10-01",
+      "bevetel": 61648210,
+      "nezoszam": 24429
     },
     {
       "magyar_cim": "CSUPASZ PISZTOLY",
@@ -12882,6 +12970,14 @@
       "nezoszam": 370625
     },
     {
+      "magyar_cim": "A VARÁZSLATOS TITOKFA",
+      "eredeti_cim": "THE MAGIC FARAWAY TREE",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-05-28",
+      "bevetel": 59162905,
+      "nezoszam": 25948
+    },
+    {
       "magyar_cim": "ÉRZELMI ÉRTÉK",
       "eredeti_cim": "SENTIMENTAL VALUE",
       "forgalmazo": "ADS",
@@ -12896,14 +12992,6 @@
       "bemutato": "1999-03-25",
       "bevetel": 59136409,
       "nezoszam": 127703
-    },
-    {
-      "magyar_cim": "A VARÁZSLATOS TITOKFA",
-      "eredeti_cim": "THE MAGIC FARAWAY TREE",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-05-28",
-      "bevetel": 59107805,
-      "nezoszam": 25914
     },
     {
       "magyar_cim": "ŐSERDŐK HŐSE",
@@ -14346,6 +14434,14 @@
       "nezoszam": 33057
     },
     {
+      "magyar_cim": "MARSUPILAMI",
+      "eredeti_cim": "MARSUPILAMI",
+      "forgalmazo": "PROROM",
+      "bemutato": "2026-06-04",
+      "bevetel": 50257255,
+      "nezoszam": 20820
+    },
+    {
       "magyar_cim": "BALHÉ",
       "eredeti_cim": "CRIME SPREE",
       "forgalmazo": "BEST HOLLYWOOD",
@@ -14392,14 +14488,6 @@
       "bemutato": "2011-08-25",
       "bevetel": 50157335,
       "nezoszam": 41365
-    },
-    {
-      "magyar_cim": "MARSUPILAMI",
-      "eredeti_cim": "MARSUPILAMI",
-      "forgalmazo": "PROROM",
-      "bemutato": "2026-06-04",
-      "bevetel": 50144405,
-      "nezoszam": 20754
     },
     {
       "magyar_cim": "DŐL A MONÉ",
@@ -14488,14 +14576,6 @@
       "bemutato": "1999-01-07",
       "bevetel": 49881604,
       "nezoszam": 113390
-    },
-    {
-      "magyar_cim": "ÉLETFUTÁR",
-      "eredeti_cim": "RUNNER",
-      "forgalmazo": "PROROM",
-      "bemutato": "2026-09-10",
-      "bevetel": 49843596,
-      "nezoszam": 18083
     },
     {
       "magyar_cim": "MY LITTLE PONY - A FILM",
@@ -14664,6 +14744,14 @@
       "bemutato": "1994-01-27",
       "bevetel": 49055639,
       "nezoszam": 345809
+    },
+    {
+      "magyar_cim": "EXTÁZIS UNCUT",
+      "eredeti_cim": "EXTÁZIS UNCUT",
+      "forgalmazo": "CINESUPER",
+      "bemutato": "2026-10-08",
+      "bevetel": 49022383,
+      "nezoszam": 21061
     },
     {
       "magyar_cim": "ANNIE",
@@ -14914,6 +15002,14 @@
       "nezoszam": 33394
     },
     {
+      "magyar_cim": "TÉRISZONY",
+      "eredeti_cim": "FALL 2: DEADPOINT",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-09-03",
+      "bevetel": 47718892,
+      "nezoszam": 17842
+    },
+    {
       "magyar_cim": "ROSSZ TÁRSASÁG",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -15056,14 +15152,6 @@
       "bemutato": "2002-03-28",
       "bevetel": 46987471,
       "nezoszam": 87087
-    },
-    {
-      "magyar_cim": "TÉRISZONY",
-      "eredeti_cim": "FALL 2: DEADPOINT",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-09-03",
-      "bevetel": 46935592,
-      "nezoszam": 17536
     },
     {
       "magyar_cim": "LORA",
@@ -15322,20 +15410,20 @@
       "nezoszam": 32976
     },
     {
+      "magyar_cim": "MOON A PANDA",
+      "eredeti_cim": "MOON THE PANDA",
+      "forgalmazo": "PROROM",
+      "bemutato": "2025-04-10",
+      "bevetel": 45697140,
+      "nezoszam": 21043
+    },
+    {
       "magyar_cim": "CASANOVA",
       "eredeti_cim": "CASANOVA",
       "forgalmazo": "FÓRUM HUNGARY",
       "bemutato": "2006-03-09",
       "bevetel": 45687593,
       "nezoszam": 50116
-    },
-    {
-      "magyar_cim": "MOON A PANDA",
-      "eredeti_cim": "MOON THE PANDA",
-      "forgalmazo": "PROROM",
-      "bemutato": "2025-04-10",
-      "bevetel": 45650140,
-      "nezoszam": 20996
     },
     {
       "magyar_cim": "CSAJOZÓS FILM",
@@ -15402,6 +15490,14 @@
       "nezoszam": 33963
     },
     {
+      "magyar_cim": "A SIVATAG FIA",
+      "eredeti_cim": "THE DESERT CHILD",
+      "forgalmazo": "PROROM",
+      "bemutato": "2026-07-23",
+      "bevetel": 45282290,
+      "nezoszam": 18888
+    },
+    {
       "magyar_cim": "UNDERWORLD",
       "eredeti_cim": "UNDERWORLD",
       "forgalmazo": "SPI",
@@ -15448,14 +15544,6 @@
       "bemutato": "2017-09-14",
       "bevetel": 45079092,
       "nezoszam": 31965
-    },
-    {
-      "magyar_cim": "A SIVATAG FIA",
-      "eredeti_cim": "THE DESERT CHILD",
-      "forgalmazo": "PROROM",
-      "bemutato": "2026-07-23",
-      "bevetel": 45035330,
-      "nezoszam": 18750
     },
     {
       "magyar_cim": "A CSAJOM APJA IDEGES",
@@ -15856,6 +15944,14 @@
       "bemutato": "2016-11-24",
       "bevetel": 43782493,
       "nezoszam": 32196
+    },
+    {
+      "magyar_cim": "A NÉMA FORRADALOM",
+      "eredeti_cim": "DAS SCHWEIGENDE KLASSENZIMMER",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2018-10-11",
+      "bevetel": 43778125,
+      "nezoszam": 50199
     },
     {
       "magyar_cim": "CONGO",
@@ -16312,6 +16408,14 @@
       "bemutato": "2011-09-22",
       "bevetel": 41814870,
       "nezoszam": 34583
+    },
+    {
+      "magyar_cim": "AGYAGPOFA",
+      "eredeti_cim": "CLAYFACE",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-10-22",
+      "bevetel": 41765725,
+      "nezoszam": 14995
     },
     {
       "magyar_cim": "A SÁRKÁNY CSÓKJA",
@@ -17018,14 +17122,6 @@
       "nezoszam": 33265
     },
     {
-      "magyar_cim": "A NÉMA FORRADALOM",
-      "eredeti_cim": "DAS SCHWEIGENDE KLASSENZIMMER",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2018-10-11",
-      "bevetel": 38986735,
-      "nezoszam": 46804
-    },
-    {
       "magyar_cim": "BABE 2.",
       "eredeti_cim": "",
       "forgalmazo": "UIP DUNA FILM",
@@ -17400,14 +17496,6 @@
       "bemutato": "1998-08-31",
       "bevetel": 37570637,
       "nezoszam": 216344
-    },
-    {
-      "magyar_cim": "IDŐZÍTETT BOMBA",
-      "eredeti_cim": "FUZE",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-04-23",
-      "bevetel": 37570005,
-      "nezoszam": 13974
     },
     {
       "magyar_cim": "SCOOBY DOO",
@@ -17810,6 +17898,14 @@
       "nezoszam": 19276
     },
     {
+      "magyar_cim": "TYÚK",
+      "eredeti_cim": "TYÚK",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-04-02",
+      "bevetel": 36041583,
+      "nezoszam": 15702
+    },
+    {
       "magyar_cim": "KÉT KIRÁLYNŐ",
       "eredeti_cim": "MARY QUEEN OF SCOTS",
       "forgalmazo": "UIP DUNA FILM",
@@ -17872,14 +17968,6 @@
       "bemutato": "2015-02-19",
       "bevetel": 35967020,
       "nezoszam": 24358
-    },
-    {
-      "magyar_cim": "TYÚK",
-      "eredeti_cim": "TYÚK",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2026-04-02",
-      "bevetel": 35939333,
-      "nezoszam": 15666
     },
     {
       "magyar_cim": "21-LAS VEGAS OSTROMA",
@@ -17960,6 +18048,14 @@
       "bemutato": "2007-10-18",
       "bevetel": 35792246,
       "nezoszam": 34418
+    },
+    {
+      "magyar_cim": "10ÉJSZAKÁS KALAND",
+      "eredeti_cim": "10ÉJSZAKÁS KALAND",
+      "forgalmazo": "PANNONIA",
+      "bemutato": "2026-09-17",
+      "bevetel": 35784640,
+      "nezoszam": 14328
     },
     {
       "magyar_cim": "SUZUME",
@@ -18176,6 +18272,14 @@
       "bemutato": "2018-08-09",
       "bevetel": 35064285,
       "nezoszam": 28055
+    },
+    {
+      "magyar_cim": "STREET FIGHTER",
+      "eredeti_cim": "STREET FIGHTER",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-10-15",
+      "bevetel": 35020815,
+      "nezoszam": 12422
     },
     {
       "magyar_cim": "ZATHURA - AZ ŰRFOGÓCSKA",
@@ -18408,14 +18512,6 @@
       "bemutato": "2009-04-23",
       "bevetel": 33914526,
       "nezoszam": 30470
-    },
-    {
-      "magyar_cim": "10ÉJSZAKÁS KALAND",
-      "eredeti_cim": "10ÉJSZAKÁS KALAND",
-      "forgalmazo": "PANNONIA",
-      "bemutato": "2026-09-17",
-      "bevetel": 33877560,
-      "nezoszam": 14013
     },
     {
       "magyar_cim": "NEXT",
@@ -18658,6 +18754,14 @@
       "nezoszam": 805383
     },
     {
+      "magyar_cim": "FÖLDSZINT",
+      "eredeti_cim": "FÖLDSZINT",
+      "forgalmazo": "CIRKO FILM",
+      "bemutato": "2026-10-01",
+      "bevetel": 33139894,
+      "nezoszam": 13174
+    },
+    {
       "magyar_cim": "NÉGY ESKÜVŐ EGY TEMETÉS",
       "eredeti_cim": "",
       "forgalmazo": "MOKÉP",
@@ -18874,14 +18978,6 @@
       "nezoszam": 23816
     },
     {
-      "magyar_cim": "FÉLRELÉPNI SZABAD",
-      "eredeti_cim": "FÉLRELÉPNI SZABAD",
-      "forgalmazo": "MEGAFILM",
-      "bemutato": "2026-09-24",
-      "bevetel": 32242818,
-      "nezoszam": 14033
-    },
-    {
       "magyar_cim": "OLTÁRI VŐLEGÉNY",
       "eredeti_cim": "",
       "forgalmazo": "KINOWELT",
@@ -18936,6 +19032,14 @@
       "bemutato": "2020-02-27",
       "bevetel": 32082250,
       "nezoszam": 20607
+    },
+    {
+      "magyar_cim": "TAD ÉS A CSODALÁMPA",
+      "eredeti_cim": "TAD AND THE MAGIC LAMP",
+      "forgalmazo": "UIP",
+      "bemutato": "2026-08-27",
+      "bevetel": 32074325,
+      "nezoszam": 14643
     },
     {
       "magyar_cim": "CSENDES ÉJ",
@@ -19666,6 +19770,14 @@
       "nezoszam": 13039
     },
     {
+      "magyar_cim": "MACSKÁK A MÚZEUMBAN 2. - EGYIPTOM KINCSEI",
+      "eredeti_cim": "CATS IN THE MUSEUM 2 - TREASURES OF EGYPT",
+      "forgalmazo": "VERTIGO",
+      "bemutato": "2026-10-01",
+      "bevetel": 29839150,
+      "nezoszam": 13085
+    },
+    {
       "magyar_cim": "GHOST",
       "eredeti_cim": "",
       "forgalmazo": "UIP DUNA FILM",
@@ -19704,6 +19816,14 @@
       "bemutato": "2003-04-24",
       "bevetel": 29681357,
       "nezoszam": 37467
+    },
+    {
+      "magyar_cim": "BÁLNAHULLÁS",
+      "eredeti_cim": "WHALEFALL",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-10-15",
+      "bevetel": 29664940,
+      "nezoszam": 10557
     },
     {
       "magyar_cim": "SZITAKÖTŐ",
@@ -19752,14 +19872,6 @@
       "bemutato": "2017-08-24",
       "bevetel": 29573160,
       "nezoszam": 21043
-    },
-    {
-      "magyar_cim": "TAD ÉS A CSODALÁMPA",
-      "eredeti_cim": "TAD AND THE MAGIC LAMP",
-      "forgalmazo": "UIP",
-      "bemutato": "2026-08-27",
-      "bevetel": 29562885,
-      "nezoszam": 12874
     },
     {
       "magyar_cim": "FARKASOK BIRODALMA",
@@ -20098,6 +20210,14 @@
       "nezoszam": 20709
     },
     {
+      "magyar_cim": "QUEEN: BUDAPEST",
+      "eredeti_cim": "QUEEN: BUDAPEST",
+      "forgalmazo": "PANNONIA",
+      "bemutato": "2026-10-07",
+      "bevetel": 28714880,
+      "nezoszam": 8877
+    },
+    {
       "magyar_cim": "HOOK",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -20434,6 +20554,14 @@
       "nezoszam": 43491
     },
     {
+      "magyar_cim": "MOMO",
+      "eredeti_cim": "MOMO",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-07-23",
+      "bevetel": 27797699,
+      "nezoszam": 11658
+    },
+    {
       "magyar_cim": "HOKUM",
       "eredeti_cim": "HOKUM",
       "forgalmazo": "ADS",
@@ -20616,14 +20744,6 @@
       "bemutato": "2005-02-03",
       "bevetel": 27442832,
       "nezoszam": 33431
-    },
-    {
-      "magyar_cim": "MOMO",
-      "eredeti_cim": "MOMO",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2026-07-23",
-      "bevetel": 27422749,
-      "nezoszam": 11410
     },
     {
       "magyar_cim": "VERSENY A GYŐZELEMÉRT",
@@ -20954,14 +21074,6 @@
       "nezoszam": 23197
     },
     {
-      "magyar_cim": "PRÉRIFARKAS VISSZAVÁG",
-      "eredeti_cim": "COYOTE VS. ACME",
-      "forgalmazo": "PROROM",
-      "bemutato": "2026-09-24",
-      "bevetel": 26621634,
-      "nezoszam": 10555
-    },
-    {
       "magyar_cim": "MINDEN HÉTEN HÁBORÚ",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -21066,6 +21178,14 @@
       "nezoszam": 28735
     },
     {
+      "magyar_cim": "APÁCA A VÁROSBAN",
+      "eredeti_cim": "A NUN IN THE CITY",
+      "forgalmazo": "PROROM",
+      "bemutato": "2025-08-21",
+      "bevetel": 26389135,
+      "nezoszam": 10747
+    },
+    {
       "magyar_cim": "UNITED 93",
       "eredeti_cim": "UNITED 93",
       "forgalmazo": "UIP DUNA FILM",
@@ -21104,14 +21224,6 @@
       "bemutato": "1998-11-30",
       "bevetel": 26297913,
       "nezoszam": 595443
-    },
-    {
-      "magyar_cim": "APÁCA A VÁROSBAN",
-      "eredeti_cim": "A NUN IN THE CITY",
-      "forgalmazo": "PROROM",
-      "bemutato": "2025-08-21",
-      "bevetel": 26296485,
-      "nezoszam": 10664
     },
     {
       "magyar_cim": "HANNA  - GYILKOS TERMÉSZET",
@@ -21240,6 +21352,14 @@
       "bemutato": "2019-08-22",
       "bevetel": 26065680,
       "nezoszam": 18280
+    },
+    {
+      "magyar_cim": "MOMMY BLUE",
+      "eredeti_cim": "MOMMY BLUE",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-10-08",
+      "bevetel": 26039850,
+      "nezoszam": 12917
     },
     {
       "magyar_cim": "BÖLCSŐD LESZ KOPORSÓD",
@@ -21570,6 +21690,14 @@
       "nezoszam": 32127
     },
     {
+      "magyar_cim": "SHAUN, A BÁRÁNY ÉS MOSZATVÉG SZÖRNYE",
+      "eredeti_cim": "SHAUN THE SHEEP: THE BEAST OF MOSSY BOTTOM",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-09-24",
+      "bevetel": 24953049,
+      "nezoszam": 10816
+    },
+    {
       "magyar_cim": "FÉLHOMÁLY",
       "eredeti_cim": "HALF LIGHT",
       "forgalmazo": "BEST HOLLYWOOD",
@@ -21752,6 +21880,14 @@
       "bemutato": "2022-01-20",
       "bevetel": 24606712,
       "nezoszam": 13811
+    },
+    {
+      "magyar_cim": "EL CAMINO – TALÁL MEG AZ UTAD",
+      "eredeti_cim": "COMPOSTELLE, LE CHEMIN DE LA VIE",
+      "forgalmazo": "CIRKO FILM",
+      "bemutato": "2026-09-10",
+      "bevetel": 24588808,
+      "nezoszam": 9147
     },
     {
       "magyar_cim": "APÁCA SHOW 2.",
@@ -22230,8 +22366,8 @@
       "eredeti_cim": "WHITE PLASTIC SKY",
       "forgalmazo": "FORUM",
       "bemutato": "2023-03-30",
-      "bevetel": 23157356,
-      "nezoszam": 12282
+      "bevetel": 23163706,
+      "nezoszam": 12432
     },
     {
       "magyar_cim": "MACSKANŐ",
@@ -22746,6 +22882,14 @@
       "nezoszam": 16755
     },
     {
+      "magyar_cim": "MOXY CICA NAGY UTAZÁSA",
+      "eredeti_cim": "MISS MOXY",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-08-20",
+      "bevetel": 21850475,
+      "nezoszam": 9316
+    },
+    {
       "magyar_cim": "FÉLELEM ÉS RETTEGÉS L.A.",
       "eredeti_cim": "",
       "forgalmazo": "BUDAPEST FILM",
@@ -23016,14 +23160,6 @@
       "bemutato": "2015-01-01",
       "bevetel": 21372152,
       "nezoszam": 15943
-    },
-    {
-      "magyar_cim": "MOXY CICA NAGY UTAZÁSA",
-      "eredeti_cim": "MISS MOXY",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-08-20",
-      "bevetel": 21369320,
-      "nezoszam": 9039
     },
     {
       "magyar_cim": "TOY STORY 1 3D",
@@ -24626,14 +24762,6 @@
       "nezoszam": 20171
     },
     {
-      "magyar_cim": "EL CAMINO – TALÁL MEG AZ UTAD",
-      "eredeti_cim": "COMPOSTELLE, LE CHEMIN DE LA VIE",
-      "forgalmazo": "CIRKO FILM",
-      "bemutato": "2026-09-10",
-      "bevetel": 18345580,
-      "nezoszam": 6653
-    },
-    {
       "magyar_cim": "DRAGONBALL: EVOLÚCIÓ",
       "eredeti_cim": "DRAGONBALL EVOLUTION",
       "forgalmazo": "INTERCOM",
@@ -25704,6 +25832,14 @@
       "bemutato": "2015-02-12",
       "bevetel": 16558410,
       "nezoszam": 12212
+    },
+    {
+      "magyar_cim": "DUZZOGI HAL KALANDJAI",
+      "eredeti_cim": "THE POUT-POUT FISH",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-09-10",
+      "bevetel": 16557175,
+      "nezoszam": 7258
     },
     {
       "magyar_cim": "LATTE, ÉS A TITOKZATOS VARÁZSKŐ",
@@ -27322,6 +27458,14 @@
       "nezoszam": 15559
     },
     {
+      "magyar_cim": "HEIDI ÉS A KIS HIÚZ",
+      "eredeti_cim": "HEIDI - DIE LEGENDE VOM LUCHS",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-10-22",
+      "bevetel": 14321745,
+      "nezoszam": 5928
+    },
+    {
       "magyar_cim": "ÖLVE VAGY HALVA",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -28426,6 +28570,14 @@
       "nezoszam": 6021
     },
     {
+      "magyar_cim": "ROLLING LOUD - A FESZT KIVAN",
+      "eredeti_cim": "ROLLING LOUD",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-10-08",
+      "bevetel": 12888947,
+      "nezoszam": 5974
+    },
+    {
       "magyar_cim": "BARÁTNŐK ÚJRATÖLTVE",
       "eredeti_cim": "ARTHUR'S WHISKY",
       "forgalmazo": "ADS",
@@ -29202,6 +29354,14 @@
       "nezoszam": 6720
     },
     {
+      "magyar_cim": "A MÉZKIRÁLY",
+      "eredeti_cim": "THE RIVALS OF AMZIAH KING",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-09-03",
+      "bevetel": 11884677,
+      "nezoszam": 4974
+    },
+    {
       "magyar_cim": "PÁRIZSI PILLANATOK",
       "eredeti_cim": "PARADIS PARIS",
       "forgalmazo": "CIRKO FILM",
@@ -29360,14 +29520,6 @@
       "bemutato": "2018-11-01",
       "bevetel": 11687965,
       "nezoszam": 8403
-    },
-    {
-      "magyar_cim": "A MÉZKIRÁLY",
-      "eredeti_cim": "THE RIVALS OF AMZIAH KING",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-09-03",
-      "bevetel": 11656007,
-      "nezoszam": 4873
     },
     {
       "magyar_cim": "BOOGEYMAN",
@@ -30610,14 +30762,6 @@
       "nezoszam": 197102
     },
     {
-      "magyar_cim": "DUZZOGI HAL KALANDJAI",
-      "eredeti_cim": "THE POUT-POUT FISH",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-09-10",
-      "bevetel": 10120980,
-      "nezoszam": 4223
-    },
-    {
       "magyar_cim": "EGY VESZEDELMES VISZONY",
       "eredeti_cim": "EN KONGELIG AFFAERE",
       "forgalmazo": "VERTIGO",
@@ -30682,6 +30826,14 @@
       "nezoszam": 94843
     },
     {
+      "magyar_cim": "ÉLETEM LEGJOBB SZÁMA",
+      "eredeti_cim": "POWER BALLAD",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-06-18",
+      "bevetel": 10031396,
+      "nezoszam": 4142
+    },
+    {
       "magyar_cim": "HUDSON HAWK",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -30720,14 +30872,6 @@
       "bemutato": "1994-03-31",
       "bevetel": 9972069,
       "nezoszam": 101639
-    },
-    {
-      "magyar_cim": "ÉLETEM LEGJOBB SZÁMA",
-      "eredeti_cim": "POWER BALLAD",
-      "forgalmazo": "INTERCOM",
-      "bemutato": "2026-06-18",
-      "bevetel": 9971896,
-      "nezoszam": 4107
     },
     {
       "magyar_cim": "ZAVAROS VIZEKEN",
@@ -31298,6 +31442,14 @@
       "nezoszam": 6989
     },
     {
+      "magyar_cim": "THE SOCIAL RECKONING – A HÁLÓZAT ÁRA",
+      "eredeti_cim": "THE SOCIAL RECKONING",
+      "forgalmazo": "INTERCOM",
+      "bemutato": "2026-10-15",
+      "bevetel": 9407771,
+      "nezoszam": 3530
+    },
+    {
       "magyar_cim": "AZ ÚT",
       "eredeti_cim": "THE ROAD",
       "forgalmazo": "BUDAPEST FILM",
@@ -31344,14 +31496,6 @@
       "bemutato": "2013-10-24",
       "bevetel": 9385805,
       "nezoszam": 7513
-    },
-    {
-      "magyar_cim": "SHAUN, A BÁRÁNY ÉS MOSZATVÉG SZÖRNYE",
-      "eredeti_cim": "SHAUN THE SHEEP: THE BEAST OF MOSSY BOTTOM",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2026-09-24",
-      "bevetel": 9323899,
-      "nezoszam": 4022
     },
     {
       "magyar_cim": "TŰRÉSHATÁR",
@@ -33066,6 +33210,14 @@
       "nezoszam": 67977
     },
     {
+      "magyar_cim": "EGY DÁN ÉPÍTÉSZ PÁRIZSBAN",
+      "eredeti_cim": "THE GREAT ARCH",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-05-28",
+      "bevetel": 7810976,
+      "nezoszam": 3661
+    },
+    {
       "magyar_cim": "EGY KUPAC KUFLI",
       "eredeti_cim": "EGY KUPAC KUFLI",
       "forgalmazo": "KEDD",
@@ -33424,6 +33576,14 @@
       "bemutato": "2021-06-24",
       "bevetel": 7484350,
       "nezoszam": 4526
+    },
+    {
+      "magyar_cim": "TONY - EGY SÉF SZÜLETÉSE",
+      "eredeti_cim": "TONY",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-10-01",
+      "bevetel": 7477994,
+      "nezoszam": 2896
     },
     {
       "magyar_cim": "TÉTOVA FÉLRELÉPŐK",
@@ -34336,14 +34496,6 @@
       "bemutato": "2016-02-18",
       "bevetel": 6734152,
       "nezoszam": 6091
-    },
-    {
-      "magyar_cim": "EGY DÁN ÉPÍTÉSZ PÁRIZSBAN",
-      "eredeti_cim": "THE GREAT ARCH",
-      "forgalmazo": "MOZINET",
-      "bemutato": "2026-05-28",
-      "bevetel": 6733436,
-      "nezoszam": 3044
     },
     {
       "magyar_cim": "TÚL A CSILLOGÁSON",
@@ -36042,6 +36194,14 @@
       "nezoszam": 2559
     },
     {
+      "magyar_cim": "AZ ÜNNEPELT",
+      "eredeti_cim": "THE BIRTHDAY PARTY",
+      "forgalmazo": "BUDAPEST FILM",
+      "bemutato": "2026-09-17",
+      "bevetel": 5623416,
+      "nezoszam": 2435
+    },
+    {
       "magyar_cim": "A SZERELEMRŐL ÉS MÁS DÉMONOKRÓL",
       "eredeti_cim": "DEL AMOR Y OTROS DEMENIOS",
       "forgalmazo": "MOKÉP-PANNÓNIA",
@@ -37690,6 +37850,14 @@
       "nezoszam": 8048
     },
     {
+      "magyar_cim": "CSALÓ CSAJOK PÁRIZSBAN",
+      "eredeti_cim": "LIVING RENT FREE",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-09-03",
+      "bevetel": 4665052,
+      "nezoszam": 2153
+    },
+    {
       "magyar_cim": "DAVID COPPERFIELD RENDKÍVÜLI ÉLETE",
       "eredeti_cim": "THE PERSONAL HISTORY OF DAVID COPPERFIELD",
       "forgalmazo": "VERTIGO",
@@ -37920,14 +38088,6 @@
       "bemutato": "1999-09-30",
       "bevetel": 4526731,
       "nezoszam": 13980
-    },
-    {
-      "magyar_cim": "CSALÓ CSAJOK PÁRIZSBAN",
-      "eredeti_cim": "LIVING RENT FREE",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-09-03",
-      "bevetel": 4525302,
-      "nezoszam": 2087
     },
     {
       "magyar_cim": "EZ IS AMERIKA",
@@ -38272,6 +38432,14 @@
       "bemutato": "2006-03-23",
       "bevetel": 4302678,
       "nezoszam": 7046
+    },
+    {
+      "magyar_cim": "PÁRHUZAMOS TÖRTÉNETEK",
+      "eredeti_cim": "HISTOIRES PARALLÈLES",
+      "forgalmazo": "CIRKO FILM",
+      "bemutato": "2026-10-22",
+      "bevetel": 4301747,
+      "nezoszam": 1661
     },
     {
       "magyar_cim": "LŐPOR TURMIX",
@@ -40738,14 +40906,6 @@
       "nezoszam": 3186
     },
     {
-      "magyar_cim": "AZ ÜNNEPELT",
-      "eredeti_cim": "THE BIRTHDAY PARTY",
-      "forgalmazo": "BUDAPEST FILM",
-      "bemutato": "2026-09-17",
-      "bevetel": 3292536,
-      "nezoszam": 1472
-    },
-    {
       "magyar_cim": "SZAUNA PÁRIZSBAN",
       "eredeti_cim": "LET MY PEOPLE GO",
       "forgalmazo": "CIRKO",
@@ -42026,6 +42186,14 @@
       "nezoszam": 19186
     },
     {
+      "magyar_cim": "OASIS: DON'T LOOK BACK IN ANGER",
+      "eredeti_cim": "DON'T LOOK BACK IN ANGER",
+      "forgalmazo": "FORUM",
+      "bemutato": "2026-09-10",
+      "bevetel": 2778480,
+      "nezoszam": 953
+    },
+    {
       "magyar_cim": "TITANIC SZOBALÁNYA",
       "eredeti_cim": "",
       "forgalmazo": "MOKÉP",
@@ -42112,14 +42280,6 @@
       "bemutato": "2009-11-12",
       "bevetel": 2752830,
       "nezoszam": 3748
-    },
-    {
-      "magyar_cim": "OASIS: DON'T LOOK BACK IN ANGER",
-      "eredeti_cim": "DON'T LOOK BACK IN ANGER",
-      "forgalmazo": "FORUM",
-      "bemutato": "2026-09-10",
-      "bevetel": 2752480,
-      "nezoszam": 943
     },
     {
       "magyar_cim": "SZERELMEM, SZARAJEVÓ",
@@ -43730,6 +43890,14 @@
       "nezoszam": 4836
     },
     {
+      "magyar_cim": "EGY BIZTONSÁGOS HELY",
+      "eredeti_cim": "LA MAISON DES FEMMES",
+      "forgalmazo": "MOZINET",
+      "bemutato": "2026-10-15",
+      "bevetel": 2249441,
+      "nezoszam": 919
+    },
+    {
       "magyar_cim": "MEDICINE MAN",
       "eredeti_cim": "",
       "forgalmazo": "INTERCOM",
@@ -44536,6 +44704,14 @@
       "bemutato": "2007-07-11",
       "bevetel": 1992060,
       "nezoszam": 3154
+    },
+    {
+      "magyar_cim": "DE GAULLE – AZ ELLENÁLLÁS HAJNALA",
+      "eredeti_cim": "DE GAULLE – TILTING IRON",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-10-22",
+      "bevetel": 1988066,
+      "nezoszam": 813
     },
     {
       "magyar_cim": "SZTRIPTIZGYILKOS",
@@ -46314,6 +46490,14 @@
       "nezoszam": 1512
     },
     {
+      "magyar_cim": "A BÁRÁNY, AMIT AKARSZ",
+      "eredeti_cim": "SHEEP IN THE BOX",
+      "forgalmazo": "CIRKO FILM",
+      "bemutato": "2026-09-24",
+      "bevetel": 1506262,
+      "nezoszam": 644
+    },
+    {
       "magyar_cim": "JOHANNA",
       "eredeti_cim": "",
       "forgalmazo": "MOKÉP",
@@ -46874,6 +47058,14 @@
       "nezoszam": 2632
     },
     {
+      "magyar_cim": "AZ ÉJSZAKA SZÜLÖTTE",
+      "eredeti_cim": "NIGHTBORN",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-09-17",
+      "bevetel": 1386990,
+      "nezoszam": 693
+    },
+    {
       "magyar_cim": "EGY SZÉP REGGELEN",
       "eredeti_cim": "UN BEAU MATIN",
       "forgalmazo": "CIRKO FILM",
@@ -46928,14 +47120,6 @@
       "bemutato": "1998-11-20",
       "bevetel": 1375536,
       "nezoszam": 5185
-    },
-    {
-      "magyar_cim": "AZ ÉJSZAKA SZÜLÖTTE",
-      "eredeti_cim": "NIGHTBORN",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-09-17",
-      "bevetel": 1374990,
-      "nezoszam": 689
     },
     {
       "magyar_cim": "MÁSIK BOLYGÓ",
@@ -47272,6 +47456,14 @@
       "bemutato": "2019-01-31",
       "bevetel": 1300430,
       "nezoszam": 1445
+    },
+    {
+      "magyar_cim": "NEONPOKOL",
+      "eredeti_cim": "HER PRIVATE HELL",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-09-24",
+      "bevetel": 1300378,
+      "nezoszam": 557
     },
     {
       "magyar_cim": "MÁSNAP",
@@ -48186,20 +48378,20 @@
       "nezoszam": 1220
     },
     {
+      "magyar_cim": "BLUE LOCK - CSAK EGY MARADHAT",
+      "eredeti_cim": "BLUE LOCK",
+      "forgalmazo": "ADS",
+      "bemutato": "2026-10-08",
+      "bevetel": 1120510,
+      "nezoszam": 566
+    },
+    {
       "magyar_cim": "SZERELEM SZELLEME",
       "eredeti_cim": "",
       "forgalmazo": "FLAMEX",
       "bemutato": "2000-09-28",
       "bevetel": 1118670,
       "nezoszam": 1590
-    },
-    {
-      "magyar_cim": "NEONPOKOL",
-      "eredeti_cim": "HER PRIVATE HELL",
-      "forgalmazo": "ADS",
-      "bemutato": "2026-09-24",
-      "bevetel": 1118458,
-      "nezoszam": 480
     },
     {
       "magyar_cim": "HITVALLÓK ÉS ÜGYNÖKÖK",
@@ -50226,14 +50418,6 @@
       "nezoszam": 1597
     },
     {
-      "magyar_cim": "A BÁRÁNY, AMIT AKARSZ",
-      "eredeti_cim": "SHEEP IN THE BOX",
-      "forgalmazo": "CIRKO FILM",
-      "bemutato": "2026-09-24",
-      "bevetel": 744302,
-      "nezoszam": 308
-    },
-    {
       "magyar_cim": "SZERELEM LÁBUJJHEGYEN",
       "eredeti_cim": "LÁSKA NA SPICKÁCH",
       "forgalmazo": "VERTIGO",
@@ -50824,6 +51008,14 @@
       "bemutato": "1990-10-25",
       "bevetel": 629928,
       "nezoszam": 14785
+    },
+    {
+      "magyar_cim": "AZ ERŐD",
+      "eredeti_cim": "VÄRN",
+      "forgalmazo": "VERTIGO",
+      "bemutato": "2026-10-15",
+      "bevetel": 629610,
+      "nezoszam": 386
     },
     {
       "magyar_cim": "KÜLVÁROSI MULATÓ",
